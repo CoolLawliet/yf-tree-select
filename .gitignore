@@ -1,9 +1,6 @@
 .DS_Store
 node_modules
-yf-tree-select
 lib
-dist
-/dist
 
 
 # local env files
