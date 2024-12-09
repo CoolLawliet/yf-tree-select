@@ -12,13 +12,13 @@ module.exports = {
     productionSourceMap: false,
     lintOnSave: true,
     chainWebpack: config => {
-        if (isProduction) {
-            // 忽略打包
-            config.externals({
-                vue: 'Vue',
-                'element-ui': 'ElementUI'
-            });
-        }
+        // if (isProduction) {
+        //     // 忽略打包
+        //     config.externals({
+        //         vue: 'Vue',
+        //         'element-ui': 'ElementUI'
+        //     });
+        // }
     },
     // css相关配置
     css: {
