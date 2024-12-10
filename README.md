@@ -58,7 +58,6 @@
 | filterable           | 是否展示搜索块                                            | boolean | false |
 | leafOnly             | v-model是否只是叶子节点                                    | boolean | false |
 | includeHalfChecked   | v-model是否包含半选节点                                    | boolean | false |
-| expand-on-click-node | 是否在点击节点的时候展开或者收缩节点， 默认值为false，只有点箭头图标的时候才会展开或者收缩节点 | boolean | false |
 | data                 | 展示数据	                                              | array   |       |
 | props                | 配置选项	                                              | object  | 见下表   |
 
