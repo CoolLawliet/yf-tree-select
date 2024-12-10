@@ -1,0 +1,42 @@
+{
+  "name": "yf-tree-select",
+  "version": "1.0.0",
+  "private": false,
+  "keyword": "基于elementui的树形选择器",
+  "keywords": [
+    "yf-tree-select",
+    "tree-select",
+    "树形选择"
+  ],
+  "homepage": "https://coollawliet.github.io/yf-tree-select/dist/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CoolLawliet/yf-tree-select"
+  },
+  "bugs": "https://github.com/CoolLawliet/yf-tree-select/issues",
+  "license": "MIT",
+  "description": "基于elementui的树形选择器",
+  "author": "lawliet",
+  "main": "lib/yf-tree-select.umd.min.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name yf-tree-select --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.14",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~5.0.0",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "files": [
+    "lib"
+  ]
+}

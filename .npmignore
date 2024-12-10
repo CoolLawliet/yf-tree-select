@@ -1,0 +1,33 @@
+# 忽略目录
+
+.DS_Store
+
+node_modules
+
+.idea
+
+packages/
+
+public/
+
+src/
+
+
+
+# 忽略指定文件
+
+.eslintrc.cjs
+
+.gitignore
+
+.npmignore
+
+.npmrc
+
+babel.config.js
+
+vue.config.js
+
+yarn.lock
+
+*.map
