@@ -7,17 +7,18 @@
  */
 const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
+    publicPath: './',
     filenameHashing: false,
     productionSourceMap: false,
     lintOnSave: true,
     chainWebpack: config => {
-        if (isProduction) {
-            // 忽略打包
-            config.externals({
-                vue: 'Vue',
-                'element-ui': 'ElementUI'
-            });
-        }
+        // if (isProduction) {
+        //     // 忽略打包
+        //     config.externals({
+        //         vue: 'Vue',
+        //         'element-ui': 'ElementUI'
+        //     });
+        // }
     },
     // css相关配置
     css: {

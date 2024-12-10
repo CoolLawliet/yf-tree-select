@@ -229,7 +229,6 @@ export default {
         'expand-on-click-node':false,
         includeHalfChecked: false,
         data: [],
-        multiple: false,
         props: {
           children: "children",
           label: "name",
@@ -350,7 +349,7 @@ export default {
         前端过滤：this.$refs.treeSelect.$refs.tree.filter(value);<br>
         后台查询：this.$refs.treeSelect.treeDataUpdateFun(data);
       */
-      this.$emit("searchFun", this.keywords);
+      this.$emit("search-fun", this.keywords);
       if (this.customerFilter) {
         return
       }
@@ -461,7 +460,7 @@ export default {
         const { children, parent, ...rest } = item
         return rest
       })
-      this.$emit('getLabelIdsDetail',detailList)
+      this.$emit('label-ids-detail',detailList)
     },
     // 更新popover位置
     _updatePopoverLocationFun() {
@@ -570,7 +569,7 @@ export default {
       let tagId = this.dataTrans.find(v => v[propsLabel] === tag)[propsValue]
       this.ids = this.removeIds(tagId, this.dataTrans, this.ids)
       this.$refs.tree.setCheckedKeys(this.ids);
-      this.$emit("removeTag", this.ids, tag);
+      this.$emit("remove-tag", this.ids, tag);
       this._emitFun();
     },
     // 下拉框清空数据
@@ -592,7 +591,7 @@ export default {
         const { children, parent, ...rest } = item
         return rest
       })
-      this.$emit('getAllDetail', detailList)
+      this.$emit('all-detail', detailList)
       if (this.onlyLeaf) {
         ids = this.filterNodesWithEmptyChildren(this.dataTrans, this.ids)
       }
@@ -608,7 +607,7 @@ export default {
           "input",
           multiple ? returnVal : returnVal.length > 0 ? returnVal[0] : ""
       )
-      this.$emit('getValueDetail', list)
+      this.$emit('value-detail', list)
       this._updatePopoverLocationFun();
     },
     // 更新宽度

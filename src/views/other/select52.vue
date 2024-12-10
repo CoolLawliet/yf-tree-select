@@ -3,7 +3,7 @@
     <yf-tree-select
         v-model="selectValue"
         :tree-attrs="treeParams"
-        @getAllDetail="getAllDetail"
+        @all-detail="getAllDetail"
     />
     <div class="json-display">
       <div>获取当前id对应的对象所有值 @getAllDetail </div>

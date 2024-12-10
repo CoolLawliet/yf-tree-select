@@ -3,7 +3,7 @@
     <yf-tree-select
         v-model="selectValue"
         :tree-attrs="treeParams"
-        @getValueDetail="getValueDetail"
+        @value-detail="getValueDetail"
     />
     <div class="json-display">
       <div>需要v-model基本类型数组，但是还需要label使用@getValueDetail</div>

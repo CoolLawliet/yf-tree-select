@@ -4,7 +4,7 @@
       <yf-tree-select
           v-model="selectValue"
           :tree-attrs="treeParams"
-          @getLabelIdsDetail="getLabelIdsDetail"
+          @label-ids-detail="getLabelIdsDetail"
       />
       <div class="json-display">
         <div>获取label对应键值对 @getLabelIdsDetail</div>
@@ -16,7 +16,7 @@
       <yf-tree-select
           v-model="selectValue2"
           :tree-attrs="treeParams"
-          @getLabelIdsDetail="getLabelIdsDetail2"
+          @label-ids-detail="getLabelIdsDetail2"
           fold-labels
       />
       <div class="json-display">
