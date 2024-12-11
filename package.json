@@ -1,6 +1,6 @@
 {
   "name": "yf-tree-select",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "private": false,
   "keyword": "基于elementui的树形选择器",
   "keywords": [

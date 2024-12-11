@@ -21,6 +21,52 @@
     }
 ```
 [预览地址](https://coollawliet.github.io/yf-tree-select/dist/)
+## Example 
+```vue
+<template>
+  <yf-tree-select
+      v-model="selectValue"
+      :tree-attrs="treeParams"
+  />
+</template>
+<script>
+  import {YfTreeSelect} from 'yf-tree-select'
+  const data = [
+    {name:'标签一',id:1,age:1},
+    {name:'标签二',id:2,age:2},
+    {
+      name:'标签三',
+      id:3,
+      age:3,
+      children:[
+        {name:'标签三-一',id:31,age:31},
+        {name:'标签三-二',id:32,age:41},
+        {name:'标签三-三',id:33,age:51},
+      ]
+    },
+  ]
+  export default {
+      components:{
+        YfTreeSelect
+      },
+      data(){
+        return {
+          selectValue: [],
+          treeParams: {
+            data,
+            filterable: true,
+            props:{
+              children: "children",
+              label: "name",
+              value: "id",
+            }
+          },
+        }  
+      },
+  }
+</script>
+
+```
 ## Attribute
 
 | 参数             | 说明                                          | 类型                         | 默认值    |
